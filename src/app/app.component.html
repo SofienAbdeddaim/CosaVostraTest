@@ -1,1 +1,9 @@
-<app-header></app-header>
+<app-header (menuToggled)="toggleMenu($event)"></app-header>
+<div class="row" *ngIf="showContent">
+  <div class="col-1-of-2">
+    <app-category></app-category>
+  </div>
+  <div class="col-1-of-2">
+    <app-articles></app-articles>
+  </div>
+</div>

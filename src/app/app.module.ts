@@ -4,12 +4,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { CategoryComponent } from './category/category.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CategoryComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule

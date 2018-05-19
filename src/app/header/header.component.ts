@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @Output() menuToggled = new EventEmitter<boolean>();
   nameToggleMenu: string;
   constructor() { }
 
@@ -15,6 +16,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu(value) {
+    this.menuToggled.emit(value);
     if (value === false) this.nameToggleMenu = 'Menu';
     else this.nameToggleMenu = 'Fermer';
   }

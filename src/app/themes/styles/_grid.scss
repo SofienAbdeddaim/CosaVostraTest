@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc(100% / 2);
+
+  }
+
+}
