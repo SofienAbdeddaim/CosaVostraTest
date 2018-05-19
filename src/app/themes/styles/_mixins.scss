@@ -1,0 +1,47 @@
+// this mixin for center an element
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin styleAppsSection {
+    position: fixed;
+    top: 1rem;
+    left: calc(100% - 25rem);
+    span {
+      width: 31px;
+      height: 12px;
+      font-family: AvenirNext;
+      font-size: 1rem;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: -0.2px;
+      text-align: left;
+      color: #b3b3b3;
+      padding-right: .5rem;
+    }
+    .btn {
+      &,
+      &:link,
+      &:visited {
+        color: $color-primary-white;
+        background-color: $color-primary-black;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.3rem 2rem;
+        display: inline-block;
+        border-radius: .1rem;
+        position: relative;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+      }
+      i {
+        color: $color-primary-white;
+        padding-left: 1rem;
+      }
+    }
+}

@@ -1,0 +1,70 @@
+<!--i'm using BEM architecture for styling (Block Element Modifier)-->
+<header class="header">
+
+  <!--first half of the header-->
+  <div class="header--first">
+
+  <!--header's logo-->
+  <div class="logo-box">
+    <img src="../../assets/jooks.svg" alt="Logo" class="header__logo">
+  </div>
+
+  <!--navigation toggle-->
+  <div class="navigation">
+    <input #checkboxMenu type="checkbox" class="navigation__checkbox" id="navi-toggle" (change)="toggleMenu(checkboxMenu.checked)">
+
+    <label for="navi-toggle" class="navigation__button">
+      {{nameToggleMenu}} <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <div class="logo-box">
+        <img src="../../assets/jooks.svg" alt="Logo" class="header__logo">
+      </div>
+      <div class="socials">
+        <i class="fab fa-instagram fa-lg"></i>
+        <i class="fab fa-facebook-f fa-lg"></i>
+      </div>
+      <div class="Path">
+        <div class="arrow"></div>
+      </div>
+      <span class="content-arrow">Rejoins-nous sur insta<br> s’y marre bien !</span>
+
+      <div class="apps">
+        <span>Les apps</span>
+        <div class="btn">ios<i class="fab fa-apple fa-lg"></i></div>
+        <div class="btn">android<i class="fab fa-android fa-lg"></i></div>
+      </div>
+
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+
+<!-- second half of the header-->
+  <div class="header--second">
+
+  <!--social network-->
+    <div class="social-network">
+    <img src="../../assets/img/social-network/social-instagram.svg"
+         class="Social---Instagram">
+    <img src="../../assets/img/social-network/social-facebook.svg"
+         class="Social---Facebook">
+    </div>
+
+  <!--phone application-->
+    <div class="apps">
+      <span>Les apps</span>
+      <div class="btn">ios<i class="fab fa-apple fa-lg"></i></div>
+      <div class="btn">android<i class="fab fa-android fa-lg"></i></div>
+    </div>
+  </div>
+</header>
