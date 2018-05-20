@@ -1,1 +1,5 @@
-<div>ghhgg</div>
+<div class="articles" (scroll)="handleScroll($event)">
+  <div *ngFor="let article of articlesData">
+    <app-article [article]="article"></app-article>
+  </div>
+</div>

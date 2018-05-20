@@ -17,7 +17,10 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu(value) {
     this.menuToggled.emit(value);
-    if (value === false) this.nameToggleMenu = 'Menu';
-    else this.nameToggleMenu = 'Fermer';
+    if (value === false) {
+      this.nameToggleMenu = 'Menu';
+    } else {
+      this.nameToggleMenu = 'Fermer';
+    }
   }
 }
