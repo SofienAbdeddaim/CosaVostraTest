@@ -5,7 +5,7 @@ import {Article} from '../Models/Article';
   templateUrl: './articles.component.html',
   styleUrls: ['./articles.component.scss']
 })
-export class ArticlesComponent implements OnInit, AfterViewInit {
+export class ArticlesComponent implements OnInit {
 
   articlesData: Article[] = [
     new Article('1@3x', 'Actu / Médias', 'Couple: est-ce ok de péter devant sa femme ?', '« Plaisir non partagé n’est plaisir qu’à moitié. »'),

@@ -25,6 +25,10 @@
     position: fixed;
     top: 1rem;
     left: calc(100% - 25rem);
+    @media (max-width: 800px) {left: calc(100% - 20rem);};
+    p {
+      @media (max-width: 800px) {display: none};
+    }
     span {
       width: 31px;
       height: 12px;
@@ -43,12 +47,12 @@
       &,
       &:link,
       &:visited {
+        display: inline-flex;
         color: $color-primary-white;
         background-color: $color-primary-black;
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.3rem 2rem;
-        display: inline-block;
         border-radius: .1rem;
         position: relative;
         font-size: 1rem;
@@ -60,4 +64,9 @@
         padding-left: 1rem;
       }
     }
+}
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: 1000px) {@content};
+  }
 }
