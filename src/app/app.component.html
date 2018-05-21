@@ -4,6 +4,16 @@
     <app-category></app-category>
   </div>
   <div class="col-1-of-2">
-    <app-articles></app-articles>
+    <app-articles (bottomReached)="showInscriptionPane()"></app-articles>
+  </div>
+</div>
+<div class="inscription" *ngIf="inscriptionPane">
+  <p class="title">Inscris-toi à la newsletter</p>
+  <button class="inscriptionButton">Balance ton mail</button>
+  <div class="separater"></div>
+  <p class="text">PS : Rejoins-nous vite sur insta, on s’y marre bien !</p>
+  <div class="socials">
+    <i class="fab fa-instagram fa-lg"></i>
+    <i class="fab fa-facebook-f fa-lg"></i>
   </div>
 </div>

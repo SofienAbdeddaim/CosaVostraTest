@@ -3,3 +3,101 @@
 @import "themes/styles/variables";
 @import "themes/styles/grid";
 //--------------------------------
+.inscription {
+  position: fixed;
+  z-index: 8888;
+  @include absCenter;
+  top: 65%;
+  width: 95%;
+  height: 50vh;
+  background-color: $color-primary;
+  padding: 5rem;
+  font-family: AvenirNext;
+  .title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: $color-primary-black;
+    @include absCenterWidth;
+  }
+  .inscriptionButton {
+    &,
+    &:link,
+    &:visited {
+      color: $color-primary-white;
+      background-color: transparent;
+      text-decoration: none;
+      padding: .8rem 4rem;
+      border: 1px solid $color-primary-black;
+      border-radius: .4rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: -0.2px;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 6rem;
+      @media (max-width: 800px) {margin-top: 8rem;};
+      @media (max-width: 350px) {padding: .4rem 4rem;};
+      @include absCenterWidth;
+    }
+  }
+  .separater {
+    width: 6rem;
+    height: 0.8px;
+    border: .1rem solid $color-primary-white;
+    margin-top: 14rem;
+    @include absCenterWidth;
+    @media (max-width: 350px) {margin-top: 16rem;};
+  }
+  .text {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: $color-primary-black;
+    margin-top: 16rem;
+    @include absCenterWidth;
+    @media (max-width: 350px) {margin-top: 18rem;};
+  }
+  .socials {
+    display: inline-block;
+    color: $color-primary-white;
+    position: fixed;
+    top: 1.8rem;
+    left: calc(50% + 2rem);
+    margin-top: 24rem;
+    @media (max-width: 800px) {margin-top: 26rem;};
+    @media (max-width: 350px) {margin-top: 30rem;};
+    @include absCenterWidth;
+    .fa-instagram {
+      height: 100%;
+      width: 4rem;
+      top: 2rem;
+      z-index: 3000;
+      cursor: pointer;
+    }
+    .fa-facebook-f {
+      height: 100%;
+      width: 4rem;
+      top: 2rem;
+      padding-left: 1rem;
+      z-index: 3000;
+      cursor: pointer;
+    }
+    .fa-lg {
+      color: $color-primary-white;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+  }
+}

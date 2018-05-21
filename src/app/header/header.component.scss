@@ -9,6 +9,9 @@
     width: 50%;
     height: 100%;
     background-color: $color-primary-black;
+    @include respond(phone) {
+      width: 100%;
+    }
     .logo-box {
       width: 12.5rem;
       height: 2.4rem;
@@ -22,6 +25,7 @@
     width: 50%;
     height: 100%;
     background-color: transparent;
+    @include respond(phone) {display: none}
     .social-network {
       font-size: 1.8rem;
       height: 1.2rem;
@@ -45,7 +49,9 @@
         object-fit: contain;
       }
     }
-    .apps { @include styleAppsSection; }
+    .apps {
+      @include styleAppsSection;
+    }
   }
 }
 
@@ -68,6 +74,7 @@
     //box-shadow: 0 1rem 3rem rgba($color-black, .1);
     text-align: center;
     cursor: pointer;
+    @include respond(phone) { left: calc(100% - 10rem); }
   }
 
   &__background {
@@ -86,6 +93,9 @@
 
   &__contact {
     margin-top: 5rem;
+    @include respond(phone) {
+      display: flex;
+    }
     .left-side {
       &:link,
       &:visited {
@@ -122,6 +132,7 @@
       position: fixed;
       top: 1.8rem;
       left: calc(50% + 2rem);
+      @include respond(phone) { display: none}
       .fa-instagram {
         height: 100%;
         width: 4rem;
@@ -153,6 +164,7 @@
       //border-bottom: .2rem solid $color-primary-white;
       transform: rotate(-50deg);
       border-radius: 50%;
+      @include respond(phone) { display: none}
       .arrow {
         top: 0;
         left: 0;
@@ -178,9 +190,11 @@
       line-height: 1.43;
       letter-spacing: -0.2px;
       text-align: left;
+      @include respond(phone) { display: none}
     }
     .apps {
       @include styleAppsSection;
+      @include respond(phone) { display: none}
     }
     //.contact-link {
     //  height: 4rem;

@@ -5,6 +5,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@mixin absCenterWidth {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
 @mixin clearfix {
   &::after {
     content: "";
@@ -25,7 +30,6 @@
     position: fixed;
     top: 1rem;
     left: calc(100% - 25rem);
-    @media (max-width: 800px) {left: calc(100% - 20rem);};
     p {
       @media (max-width: 800px) {display: none};
     }
@@ -68,5 +72,8 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == tablet {
     @media (max-width: 1000px) {@content};
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 520px) {@content};
   }
 }

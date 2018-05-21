@@ -24,7 +24,10 @@
         text-align: left;
         color: $color-primary;
         padding: 1rem;
-        @include respond(tablet) {padding: .2rem}
+        @include respond(tablet) {
+          font-size: 2rem;
+          padding: .2rem;
+        }
       }
       .article-content {
         padding: .5rem;
@@ -51,7 +54,10 @@
         text-align: left;
         color: $color-primary-black;
         margin-top: .5rem;
-        @include respond(tablet) {margin-top: .1rem}
+        @include respond(tablet) {
+          font-size: 2rem;
+          margin-top: .1rem;
+        }
       }
     }
   }

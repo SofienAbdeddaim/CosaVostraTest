@@ -8,8 +8,10 @@ import {Component, OnInit} from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'app';
   showContent: boolean;
+  inscriptionPane: boolean;
   ngOnInit() {
     this.showContent = true;
+    this.inscriptionPane = false;
   }
 
   toggleMenu(value) {
@@ -20,5 +22,9 @@ export class AppComponent implements OnInit {
         this.showContent = true;
       }, 400);
     }
+  }
+
+  showInscriptionPane() {
+    this.inscriptionPane = true;
   }
 }
