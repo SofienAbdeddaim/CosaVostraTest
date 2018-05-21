@@ -9,9 +9,11 @@ export class AppComponent implements OnInit {
   title = 'app';
   showContent: boolean;
   inscriptionPane: boolean;
+  showRegister: boolean;
   ngOnInit() {
     this.showContent = true;
     this.inscriptionPane = false;
+    this.showRegister = false;
   }
 
   toggleMenu(value) {
@@ -26,5 +28,11 @@ export class AppComponent implements OnInit {
 
   showInscriptionPane() {
     this.inscriptionPane = true;
+  }
+
+  onRegister() {
+    this.showContent = false;
+    this.inscriptionPane = false;
+    this.showRegister = true;
   }
 }

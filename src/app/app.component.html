@@ -7,9 +7,10 @@
     <app-articles (bottomReached)="showInscriptionPane()"></app-articles>
   </div>
 </div>
+<app-register *ngIf="showRegister"></app-register>
 <div class="inscription" *ngIf="inscriptionPane">
   <p class="title">Inscris-toi à la newsletter</p>
-  <button class="inscriptionButton">Balance ton mail</button>
+  <button (click)="onRegister()" class="inscriptionButton">Balance ton mail</button>
   <div class="separater"></div>
   <p class="text">PS : Rejoins-nous vite sur insta, on s’y marre bien !</p>
   <div class="socials">
