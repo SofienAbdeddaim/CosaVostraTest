@@ -1,7 +1,8 @@
 # JouksProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
-
+This project is an angular app with the new scss features and animation 
+![alt text](https://i.gyazo.com/30ac3bf399df85e6c1b08cb05a904bbf.png)
+![alt text](https://i.gyazo.com/9a05285827d1cba00ade63b7b78199da.gif)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
