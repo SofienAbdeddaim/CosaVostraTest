@@ -1,6 +1,6 @@
 # JouksProject
 
-This project is an angular app with the new scss features and animation 
+This project is an angular app with the new scss features and animation, responsive design (the structure of the app change whith different devices)
 ![alt text](https://i.gyazo.com/1a681c14634a4fe2ed82801384ef6b46.gif)
 ![alt text](https://i.gyazo.com/9a05285827d1cba00ade63b7b78199da.gif)
 ## Development server
