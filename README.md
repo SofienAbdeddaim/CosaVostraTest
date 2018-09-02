@@ -2,7 +2,7 @@
 
 This project is an angular app with the new scss features and animation, responsive design (the structure of the app change whith different devices)
 ![alt text](https://i.gyazo.com/1a681c14634a4fe2ed82801384ef6b46.gif)
-![alt text](https://i.gyazo.com/9a05285827d1cba00ade63b7b78199da.gif)
+![alt text](https://i.gyazo.com/e982fd24bdc394bd356c79b0bd727638.gif)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
